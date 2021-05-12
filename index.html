@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit Sederhana</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="text-center">Game Suit Sederhana</h1>
+        </div>
+        <div class="card text-center mt-3 border-0">
+            <div class="card-body">
+                <h3>Pilihan Kamu</h3>
+                <button type="button" class="btn btn-outline-primary" id="Kertas">Kertas</button>
+                <button type="button" class="btn btn-outline-primary" id="Gunting">Gunting</button>
+                <button type="button" class="btn btn-outline-primary" id="Batu">Batu</button><br>
+                <button class="btn btn-outline-primary mt-2" id="reset">Reset Score</button>
+                <h3 class="mt-4">Pilihan Komputer : </h3>
+                <button class="btn btn-primary" id="komputer" disabled>-</button>
+            </div>
+            <div class="card-footer">
+                <h5>Hasil : <span class="hasil"></span></h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Menang</th>
+                            <th>Kalah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="menang">0</td>
+                            <td id="kalah">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
